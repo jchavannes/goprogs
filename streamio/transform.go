@@ -16,8 +16,8 @@ func main() {
     }
     columns := strings.Split(line, "\t")
     for i, val := range columns {
-	  columns[i] = strings.Trim(val, "\n")
-	}
+      columns[i] = strings.Trim(val, "\n")
+    }
     writer.Write(columns)
     writer.Flush()
   }
